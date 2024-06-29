@@ -19,31 +19,38 @@ class myApp extends StatelessWidget {
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  //Container for photo
-                  Container(
-                    height: 100,
-                    width: 100,
-                    child: CircleAvatar(
-                      radius: 48, // Image radius
-                      backgroundImage: NetworkImage(
-                          'https://f-photobook.jp/column/img/59/img_01.jpg'),
-                    ), //Replace this line with actual photo
+                  //I use container in here, but that would be reduntant, we can use circle avatar directly.
+                  CircleAvatar(
+                    radius: 100, // Image radius
+                    backgroundImage: AssetImage("images/yangyu-xie.jpg"),
                   ),
                   //Container for name
                   Container(
-                    margin: EdgeInsets.fromLTRB(0.0, 20.0, 0.0, 0),
-                    child: Text("Yangyu Xie"),
+                    margin: EdgeInsets.fromLTRB(0, 0, 0, 10),
+                    child: Text(
+                      "Yangyu Xie",
+                      style: TextStyle(
+                        fontSize: 50,
+                        color: Colors.white,
+                        fontFamily: 'PlaywriteUSModern',
+                      ),
+                    ),
                   ),
                   //Container for titles
                   Container(
-                    child: Text("Flutter learner"),
+                    child: Text(
+                      "Flutter learner",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
                   ),
                   // Container for a while line
                   Container(
                     margin: EdgeInsets.symmetric(vertical: 10),
                     color: Colors.white,
                     height: 1,
-                    width: 100,
+                    width: 150,
                   ),
 
                   //phone number container
@@ -52,19 +59,27 @@ class myApp extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Container(
-                        height: 30,
-                        width: 200,
+                        height: 50,
+                        width: 300,
                         color: Colors.white,
-                        child: Center(child: Text("+81-80-3244-6989")),
+                        child: Center(
+                            child: Text(
+                          "+81-80-3244-6989",
+                          style: TextStyle(fontSize: 20),
+                        )),
                       ),
                       Container(
                         margin: EdgeInsets.symmetric(vertical: 10),
                       ),
                       Container(
-                          height: 30,
-                          width: 200,
+                          height: 50,
+                          width: 300,
                           color: Colors.white,
-                          child: Center(child: Text("xlyxieyang@outlook.jp"))),
+                          child: Center(
+                              child: Text(
+                            "xlyxieyang@outlook.jp",
+                            style: TextStyle(fontSize: 20),
+                          ))),
                     ],
                   ),
                 ],
