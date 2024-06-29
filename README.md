@@ -13,6 +13,12 @@ This is for position the margin and padding
 (9) TextStyle:https://api.flutter.dev/flutter/painting/TextStyle-class.html
 (10) Custom Font: Text("Yangyu Xie"),
 (11) Google Font Download link: https://fonts.google.com
+
+(12) Icon: https://api.flutter.dev/flutter/material/Icons-class.html
+(13) Icon List: https://fonts.google.com/icons
+(14) Materialpalette: https://www.materialpalette.com/light-blue/cyan
+
+(14)
 Concept:
 (1) padding: space around an element contents inside of any defined border.
 (2) Margin: Space around the outside of a border.
